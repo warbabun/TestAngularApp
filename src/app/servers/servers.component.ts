@@ -22,6 +22,6 @@ export class ServersComponent {
   }
 
   onServerAdded() {
-    this.serverStatus = 'Server was added'
+    this.serverStatus = 'Server was added ' + this.serverName;
   }
 }

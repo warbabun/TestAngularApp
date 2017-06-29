@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="userNameInput">Username</label>
+      <input id="userNameInput" type="text" class="form-control" [(ngModel)]="userName">
+      <p>{{userName}}</p>
+      <button [disabled]="userName === ''" class="btn btn-debug" (click)="onAddUser()">Add user</button>
+      <hr>
+    </div>
+  </div>
+</div>

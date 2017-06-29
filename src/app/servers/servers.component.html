@@ -1,15 +1,10 @@
-<input
-  type="text"
-  class="form-control"
-  (input)="onUpdateServer($event)"/>
+<input type="text" class="form-control" (input)="onUpdateServer($event)" />
+
+<input type="text" class="form-control" [(ngModel)]="serverName" />
 <p>{{serverName}}
 </p>
-<input
-  type="button"
-  value="Add server"
-  class="btn btn-primary"
-  [disabled]="!isAllowNewServer"
-  (click)="onServerAdded()"/>
+<input type="button" value="Add server" class="btn btn-primary" [disabled]="!isAllowNewServer" (click)="onServerAdded()"
+/>
 <p>{{ serverStatus }}</p>
 <hr>
 <app-server></app-server>
